@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import textBox from "../assets/whyweexist/文字框.png";
-import animatedGif from "../assets/whyweexist/动态.gif";
+import textBox from "../assets/whyweexist/text-frame.png";
+import animatedGif from "../assets/whyweexist/animation.gif";
 import leftSvg from "../assets/whyweexist/left.svg";
 import rightSvg from "../assets/whyweexist/right.svg";
 

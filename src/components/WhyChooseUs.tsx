@@ -1,7 +1,7 @@
-import frame from "../assets/whychooseus/框.png";
-import illustration from "../assets/whychooseus/插画配图.png";
-import icon1 from "../assets/whychooseus/1.png";
-import icon2 from "../assets/whychooseus/2.png";
+import frame from "../assets/whychooseus/frame.png";
+import illustration from "../assets/whychooseus/illustration.png";
+import icon1 from "../assets/whychooseus/feature-01.png";
+import icon2 from "../assets/whychooseus/feature-02.png";
 
 const features = [
     {

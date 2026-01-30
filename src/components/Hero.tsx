@@ -1,4 +1,4 @@
-import heroBg from "../assets/hero/头部背景.png";
+import heroBg from "../assets/hero/hero-background.png";
 
 export default function Hero() {
     return (

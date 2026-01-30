@@ -1,9 +1,9 @@
-import chainBg from "../assets/security/chain背景.png";
-import centerIllustration from "../assets/security/中心插画图.png";
-import iconApproval from "../assets/security/Frame 1000005999.png";
-import iconDelay from "../assets/security/Frame 1000006003.png";
-import iconRefuse from "../assets/security/Frame 1000006006.png";
-import iconLock from "../assets/security/Frame 1000006009.png";
+import chainBg from "../assets/security/chain-background.png";
+import centerIllustration from "../assets/security/center-illustration.png";
+import iconApproval from "../assets/security/icon-approval.png";
+import iconDelay from "../assets/security/icon-delay.png";
+import iconRefuse from "../assets/security/icon-refuse.png";
+import iconLock from "../assets/security/icon-lock.png";
 
 const SECURITY_POLICY_DESCRIPTION =
     "Advanced security measures protect your digital assets from unauthorized access and potential threats. Our multi-layered approach ensures maximum protection for your cryptocurrency transactions and wallet operations.";

@@ -1,8 +1,8 @@
-import bgFrame from "../assets/whattosupport/背景框.png";
-import limitPerTx from "../assets/whattosupport/Frame 1000005987.png";
-import riskControlBalance from "../assets/whattosupport/Frame 1000005991.png";
-import walletAndAddress from "../assets/whattosupport/Frame 1000005992.png";
-import callContract from "../assets/whattosupport/Frame 1000005993.png";
+import bgFrame from "../assets/whattosupport/background-frame.png";
+import limitPerTx from "../assets/whattosupport/limit-per-transaction.png";
+import riskControlBalance from "../assets/whattosupport/risk-control-balance.png";
+import walletAndAddress from "../assets/whattosupport/wallet-and-address.png";
+import callContract from "../assets/whattosupport/call-contract.png";
 
 const panels = [
     {
