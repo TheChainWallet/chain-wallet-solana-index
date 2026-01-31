@@ -1,134 +1,104 @@
-import chainBg from "../assets/security/chain-background.png";
-import centerIllustration from "../assets/security/center-illustration.png";
-import iconApproval from "../assets/security/icon-approval.png";
-import iconDelay from "../assets/security/icon-delay.png";
-import iconRefuse from "../assets/security/icon-refuse.png";
-import iconLock from "../assets/security/icon-lock.png";
-
-const securityPolicies = [
+const policies = [
     {
         num: "01",
-        name: "Transaction Approval",
+        title: "Transaction Approval",
         description: "Require manual approval for all outgoing transactions to prevent unauthorized transfers",
-        icon: iconApproval,
-        textLeft: true,
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        ),
     },
     {
         num: "02",
-        name: "Time Delay",
+        title: "Time Delay",
         description: "Implement configurable delays before transaction execution for enhanced security review",
-        icon: iconDelay,
-        textLeft: false,
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        ),
     },
     {
         num: "03",
-        name: "Transaction Rejection",
+        title: "Transaction Rejection",
         description: "Automatically refuse suspicious transactions based on predefined security rules",
-        icon: iconRefuse,
-        textLeft: true,
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+            </svg>
+        ),
     },
     {
         num: "04",
-        name: "Wallet Lock",
+        title: "Wallet Lock",
         description: "Instantly freeze wallet access when potential security threats are detected",
-        icon: iconLock,
-        textLeft: false,
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+        ),
     },
-] as const;
-
-function PolicyBlock({
-    num,
-    name,
-    description,
-    icon,
-    textLeft,
-}: {
-    num: string;
-    name: string;
-    description: string;
-    icon: string;
-    textLeft: boolean;
-}) {
-    const meta = (
-        <div
-            className={`flex items-center gap-2 md:gap-4 shrink-0 ${
-                textLeft ? "flex-row" : "flex-row-reverse"
-            }`}
-        >
-            <span
-                className="text-blue-200/90 text-5xl md:text-6xl lg:text-7xl font-semibold font-['Inter'] tabular-nums select-none"
-                aria-hidden
-            >
-                {num}
-            </span>
-            <div
-                className={`flex items-center gap-2 md:gap-3 ${
-                    textLeft ? "flex-row" : "flex-row-reverse"
-                }`}
-            >
-                <h3 className="text-slate-900 text-base md:text-lg font-semibold font-['Inter']">
-                    {name}
-                </h3>
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-                    <img src={icon} alt={`${name} security policy icon`} className="w-5 h-5 md:w-6 md:h-6 object-contain" />
-                </div>
-            </div>
-        </div>
-    );
-    return (
-        <div
-            className={`flex flex-col md:flex-row items-stretch gap-4 md:gap-6 ${
-                textLeft ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
-        >
-            <p className="flex-1 min-w-0 text-slate-900/75 text-sm md:text-base font-normal font-['Onest'] leading-relaxed order-2 md:order-1">
-                {description}
-            </p>
-            <div className="order-1 md:order-2">{meta}</div>
-        </div>
-    );
-}
+];
 
 export default function SecurityPolicy() {
     return (
-        <section className="py-16 md:py-24 relative bg-white overflow-hidden" aria-labelledby="security-policy-heading">
-            {/* Faint chain links background */}
-            <div
-                className="absolute inset-0 opacity-30 bg-cover bg-center bg-no-repeat pointer-events-none"
-                style={{ backgroundImage: `url(${chainBg})` }}
-                aria-hidden="true"
-                role="presentation"
-            />
-
-            <header className="relative z-10 max-w-6xl mx-auto px-4 mb-12">
-                <h2 id="security-policy-heading" className="text-3xl md:text-5xl font-bold text-center text-slate-900 mb-4 font-['Onest']">
-                    Security Policy Framework
-                </h2>
-                <p className="text-center text-slate-900/80 text-lg font-semibold font-['Onest'] leading-6">
-                    Choose the risk control strategy that best protects your digital assets
-                </p>
-            </header>
-
-            <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-8">
-
-                {/* Security policies grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 mb-8 md:mb-6" role="list" aria-label="Security policies">
-                    <article role="listitem"><PolicyBlock {...securityPolicies[0]} /></article>
-                    <article role="listitem"><PolicyBlock {...securityPolicies[1]} /></article>
+        <section className="py-24 md:py-32 px-6 bg-[hsl(var(--card))]">
+            <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-16">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-glass text-sm text-[hsl(var(--primary))] font-medium mb-4">
+                        Security
+                    </span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                        Security Policy Framework
+                    </h2>
+                    <p className="text-[hsl(var(--muted-foreground))] text-lg max-w-2xl mx-auto">
+                        Choose the risk control strategy that best protects your digital assets
+                    </p>
                 </div>
 
-                {/* Security framework illustration */}
-                <figure className="flex justify-center my-6 md:my-8">
-                    <img
-                        src={centerIllustration}
-                        alt="Security policy framework illustration showing interconnected protection layers"
-                        className="w-full max-w-[280px] md:max-w-[360px] lg:max-w-[420px] h-auto object-contain"
-                    />
-                </figure>
+                <div className="grid md:grid-cols-2 gap-6">
+                    {policies.map((policy) => (
+                        <div
+                            key={policy.num}
+                            className="bg-glass rounded-2xl p-6 md:p-8 hover:bg-glass-strong transition-all group"
+                        >
+                            <div className="flex items-start gap-5">
+                                <div className="flex flex-col items-center gap-3">
+                                    <span className="text-5xl font-bold text-[hsl(var(--primary))]/20 group-hover:text-[hsl(var(--primary))]/40 transition-colors">
+                                        {policy.num}
+                                    </span>
+                                    <div className="w-10 h-10 rounded-lg bg-[hsl(var(--primary))]/10 flex items-center justify-center text-[hsl(var(--primary))]">
+                                        {policy.icon}
+                                    </div>
+                                </div>
+                                <div className="flex-1 pt-2">
+                                    <h3 className="text-xl font-semibold text-white mb-3">
+                                        {policy.title}
+                                    </h3>
+                                    <p className="text-[hsl(var(--muted-foreground))] leading-relaxed">
+                                        {policy.description}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 mt-8 md:mt-6" role="list" aria-label="Additional security policies">
-                    <article role="listitem"><PolicyBlock {...securityPolicies[2]} /></article>
-                    <article role="listitem"><PolicyBlock {...securityPolicies[3]} /></article>
+                {/* Security Shield Visual */}
+                <div className="mt-16 flex justify-center">
+                    <div className="relative">
+                        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center glow-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-16 h-16 md:w-20 md:h-20 text-[hsl(var(--primary))]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[hsl(var(--primary))] flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
