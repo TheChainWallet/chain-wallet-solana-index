@@ -39,7 +39,7 @@ export default function Header() {
                         EN
                     </button>
                     <a
-                        className="px-6 py-2.5 bg-[hsl(var(--primary))] hover:bg-[hsl(168_84%_35%)] text-white text-sm font-medium rounded-lg transition-all glow-primary"
+                        className="px-6 py-2.5 bg-gradient-brand hover:opacity-90 text-[hsl(var(--background))] text-sm font-semibold rounded-lg transition-all glow-primary"
                         href="https://dash.chainwallet.me"
                     >
                         Launch App
@@ -106,7 +106,7 @@ export default function Header() {
                         EN
                     </div>
                     <a
-                        className="mt-4 w-full py-3 bg-[hsl(var(--primary))] hover:bg-[hsl(168_84%_35%)] text-white text-sm font-medium rounded-lg text-center transition-all"
+                        className="mt-4 w-full py-3 bg-gradient-brand hover:opacity-90 text-[hsl(var(--background))] text-sm font-semibold rounded-lg text-center transition-all"
                         href="https://dash.chainwallet.me"
                     >
                         Launch App

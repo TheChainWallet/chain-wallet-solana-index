@@ -45,8 +45,8 @@ export default function WhatToSupport() {
     return (
         <section className="py-24 md:py-32 px-6 relative overflow-hidden">
             {/* Background Accents */}
-            <div className="absolute top-1/2 left-0 w-64 h-64 bg-[hsl(var(--primary))] opacity-5 blur-[120px] rounded-full" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-[hsl(var(--primary))] opacity-5 blur-[150px] rounded-full" />
+            <div className="absolute top-1/2 left-0 w-64 h-64 bg-[#09DFF8] opacity-5 blur-[120px] rounded-full" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#033FFF] opacity-5 blur-[150px] rounded-full" />
 
             <div className="max-w-6xl mx-auto relative z-10">
                 <div className="text-center mb-16">

@@ -2,7 +2,7 @@ export default function WhyWeExist() {
     return (
         <section className="py-24 md:py-32 px-6 relative overflow-hidden">
             {/* Background Accent */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[hsl(var(--primary))] opacity-5 blur-[150px] rounded-full" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#09DFF8] opacity-5 blur-[150px] rounded-full" />
 
             <div className="max-w-6xl mx-auto relative z-10">
                 <div className="text-center mb-16">

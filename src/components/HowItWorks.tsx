@@ -92,7 +92,7 @@ export default function HowItWorks() {
                 <div className="text-center mt-12">
                     <a
                         href="https://docs.chainwallet.me"
-                        className="inline-flex items-center gap-2 text-[hsl(var(--primary))] hover:text-[hsl(168_84%_50%)] font-medium transition-colors"
+                        className="inline-flex items-center gap-2 text-[#09DFF8] hover:text-white font-medium transition-colors"
                     >
                         Learn more in our documentation
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

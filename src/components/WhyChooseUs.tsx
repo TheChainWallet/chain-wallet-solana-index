@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
     return (
         <section className="py-24 md:py-32 px-6 relative overflow-hidden">
             {/* Background Accent */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[hsl(var(--primary))] opacity-5 blur-[180px] rounded-full" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-gradient-to-r from-[#09DFF8] to-[#033FFF] opacity-5 blur-[180px] rounded-full" />
 
             <div className="max-w-6xl mx-auto relative z-10">
                 <div className="text-center mb-16">
@@ -90,7 +90,7 @@ export default function WhyChooseUs() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href="https://dash.chainwallet.me"
-                            className="px-8 py-4 bg-[hsl(var(--primary))] hover:bg-[hsl(168_84%_35%)] text-white font-semibold rounded-xl transition-all"
+                            className="px-8 py-4 bg-gradient-brand hover:opacity-90 text-[hsl(var(--background))] font-semibold rounded-xl transition-all"
                         >
                             Get Started Free
                         </a>

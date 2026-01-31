@@ -14,13 +14,13 @@ function App() {
             {/* Hero Section */}
             <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
                 {/* Background Grid Pattern */}
-                <div className="absolute inset-0 opacity-20">
+                <div className="absolute inset-0 opacity-30">
                     <div
                         className="absolute inset-0"
                         style={{
                             backgroundImage: `
-                                linear-gradient(rgba(20, 184, 166, 0.03) 1px, transparent 1px),
-                                linear-gradient(90deg, rgba(20, 184, 166, 0.03) 1px, transparent 1px)
+                                linear-gradient(rgba(9, 223, 248, 0.04) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(9, 223, 248, 0.04) 1px, transparent 1px)
                             `,
                             backgroundSize: '60px 60px'
                         }}
@@ -28,8 +28,8 @@ function App() {
                 </div>
 
                 {/* Gradient Orbs */}
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[hsl(var(--primary))] opacity-10 blur-[120px] rounded-full" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[hsl(var(--primary))] opacity-5 blur-[150px] rounded-full" />
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#09DFF8] opacity-10 blur-[120px] rounded-full" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#033FFF] opacity-10 blur-[150px] rounded-full" />
 
                 <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-glass mb-8">
@@ -52,13 +52,13 @@ function App() {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            className="px-8 py-4 bg-[hsl(var(--primary))] hover:bg-[hsl(168_84%_35%)] text-white text-base font-semibold rounded-xl transition-all glow-primary-strong"
+                            className="px-8 py-4 bg-gradient-brand hover:opacity-90 text-[hsl(var(--background))] text-base font-semibold rounded-xl transition-all glow-primary-strong"
                             href="https://dash.chainwallet.me"
                         >
                             Launch App
                         </a>
                         <a
-                            className="px-8 py-4 bg-glass-strong hover:bg-[hsl(var(--secondary))] text-white text-base font-semibold rounded-xl transition-all"
+                            className="px-8 py-4 bg-glass-strong hover:bg-[hsl(var(--secondary))] text-white text-base font-semibold rounded-xl transition-all border border-[rgba(9,223,248,0.2)]"
                             href="https://docs.chainwallet.me"
                         >
                             Read Docs
