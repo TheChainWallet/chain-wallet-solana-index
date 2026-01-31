@@ -5,9 +5,6 @@ import iconDelay from "../assets/security/icon-delay.png";
 import iconRefuse from "../assets/security/icon-refuse.png";
 import iconLock from "../assets/security/icon-lock.png";
 
-const SECURITY_POLICY_DESCRIPTION =
-    "Advanced security measures protect your digital assets from unauthorized access and potential threats. Our multi-layered approach ensures maximum protection for your cryptocurrency transactions and wallet operations.";
-
 const securityPolicies = [
     {
         num: "01",

@@ -1,5 +1,5 @@
 import Header from "./Header.tsx";
-import upBackground from "./assets/hero/up_backendground.png";
+import upBackground from "./assets/hero/hero-background.png";
 import HowItWorks from "./components/HowItWorks.tsx";
 import SecurityPolicy from "./components/SecurityPolicy.tsx";
 import WhatToSupport from "./components/WhatToSupport.tsx";
